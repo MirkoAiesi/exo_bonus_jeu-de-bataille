@@ -1,7 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
+List<Cartes> tasDeCarte = new List<Cartes>();
+foreach (ValeurCartes valeur in Enum.GetValues(typeof(ValeurCartes)))
+{
+    foreach (CouleurCartes couleur in Enum.GetValues(typeof(CouleurCartes)))
+    {
+        tasDeCarte.Add(new Cartes{Valeur= valeur, Couleur = couleur});
+    }
+}
 
-Console.WriteLine("Hello, World!");
-
+foreach (Cartes carte in tasDeCarte)
+{
+    Console.WriteLine($"{carte.Valeur} de {carte.Couleur}");
+}
 public enum ValeurCartes
 {
     Deux,
@@ -25,4 +35,12 @@ public enum CouleurCartes
     Carreau,
     Trefle,
     Pique
+}
+
+class Cartes
+{
+    public 
+        
+        ValeurCartes Valeur;
+    public CouleurCartes Couleur;
 }
