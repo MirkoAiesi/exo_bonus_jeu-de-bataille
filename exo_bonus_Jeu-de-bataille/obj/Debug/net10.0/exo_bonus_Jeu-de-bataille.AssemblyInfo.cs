@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("exo_bonus_Jeu-de-bataille")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d8e179e775c05e86713fb6ac58db70e923de607")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+868de274f9a2453b0ed9047ae079f957f1d7231a")]
 [assembly: System.Reflection.AssemblyProductAttribute("exo_bonus_Jeu-de-bataille")]
 [assembly: System.Reflection.AssemblyTitleAttribute("exo_bonus_Jeu-de-bataille")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
