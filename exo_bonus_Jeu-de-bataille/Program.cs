@@ -1,8 +1,10 @@
 ﻿
+using exo_bonus_Jeu_de_bataille;
+
 List<Cartes> tasDeCarte = new List<Cartes>();
-foreach (ValeurCartes valeur in Enum.GetValues(typeof(ValeurCartes)))
+foreach (ValeurCartes valeur in Enum.GetValues(typeof(ValeurCartes))) // typeof récupère toutes les constantes de l’énumération ValeurCartes
 {
-    foreach (CouleurCartes couleur in Enum.GetValues(typeof(CouleurCartes)))
+    foreach (CouleurCartes couleur in CouleurCartes.GetValues<CouleurCartes>())
     {
         tasDeCarte.Add(new Cartes{Valeur= valeur, Couleur = couleur});
     }
@@ -11,36 +13,4 @@ foreach (ValeurCartes valeur in Enum.GetValues(typeof(ValeurCartes)))
 foreach (Cartes carte in tasDeCarte)
 {
     Console.WriteLine($"{carte.Valeur} de {carte.Couleur}");
-}
-public enum ValeurCartes
-{
-    Deux,
-    Trois,
-    Quatre,
-    Cinq,
-    Six,
-    Sept,
-    Huit,
-    Neuf,
-    Dix,
-    Valet,
-    Dame,
-    Roi, 
-    As
-}
-
-public enum CouleurCartes
-{
-    Coeur,
-    Carreau,
-    Trefle,
-    Pique
-}
-
-class Cartes
-{
-    public 
-        
-        ValeurCartes Valeur;
-    public CouleurCartes Couleur;
 }
