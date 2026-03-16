@@ -1,3 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using exo_bonus_Jeu_de_bataille;
 
-Console.WriteLine("Hello, World!");
+Bataille b = new Bataille();
